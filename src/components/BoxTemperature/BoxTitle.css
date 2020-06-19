@@ -1,0 +1,47 @@
+
+.box-title .col-image {
+    background-color: #63E001;
+    text-align: center;
+}
+.box-title .col-title-detail {
+    background-color: #3FD133;
+}
+.box-title .image {
+    width: 80px;
+}
+.box-title .row-title-value {
+    background-color: #fff;
+}
+.value-box .image{
+    float: left;
+}
+.value-box .text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 80px
+}
+.value-box-flex {
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.value-box-flex .image{
+    height: 50px;
+}
+.value-box-flex .text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.image.image-cloud {
+    width: 50px;
+}
+.image.image-water {
+    width: 35px;
+}
+.image.image-marker {
+    width: 45px;
+}
