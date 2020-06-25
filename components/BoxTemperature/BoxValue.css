@@ -1,0 +1,29 @@
+.box-value{
+    
+} 
+
+.day {
+    background-color:white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 8px;
+}
+
+.data {
+    overflow: hidden;
+    background: #90EA71;
+    padding: 12px;
+    border-radius: 15px;
+}
+.data .image {
+    float: left;
+}
+.data .value{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}

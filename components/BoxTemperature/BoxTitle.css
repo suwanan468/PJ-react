@@ -1,0 +1,122 @@
+
+.box-title .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.box-title .col-image {
+    background-color: #63E001;
+    text-align: center;
+    border-top-left-radius: 15px;
+}
+.box-title .col-title-detail {
+    background-color: #3FD133;
+    border-top-right-radius: 15px;
+}
+.box-title .image {
+    width: 80px;
+}
+.box-title .row-title-value {
+    background-color: #fff;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.air-index {
+    float: left;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #354d70;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.value-box .image{
+    float: left;
+}
+.value-box .text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 80px
+}
+.value-box-flex {
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.value-box-flex .image{
+    height: 50px;
+}
+.value-box-flex .text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.image.image-cloud {
+    width: 50px;
+}
+.image.image-water {
+    width: 35px;
+}
+.image.image-marker {
+    width: 45px;
+}
+.col-title-detail {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.value-weather-flex .text{
+    font-size: 40px;
+    line-height: 60px;
+    color: white;
+    font-weight: bold;
+    margin-left: 100px
+}
+.value-weather-flex .text1{
+    font-size: 15px;
+    color: 545252;
+    margin-left: 110px
+}
+.value-weather-flex .text1,
+.value-weather-flex .text2 {
+    margin-top: 5px;
+}
+.text-time{
+    font-weight: bold;
+    color: #6B6B6B;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.text-head{
+    font-weight: bold;
+    font-style: 48px;
+    line-height: 77px;
+    line-height: 100%;
+    align-items:Left;
+    vertical-align: Top;
+  
+}
+.horizontal{
+    margin-top: -0px;
+    border-top: 5px solid black;
+    border-bottom: 2px;
+    margin-bottom: 5px;
+}
+
+.text2{
+    background-color:white;
+    text-align: center;
+    font-weight: bold;
+    width: 160px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top:auto;
+    border-radius: 10px;
+}
+.header-desc {
+    overflow: hidden;
+}
+
