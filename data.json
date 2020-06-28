@@ -1,0 +1,33 @@
+{
+    "status": "success",
+    "data": {
+        "city": "Hat Yai",
+        "state": "Songkhla",
+        "country": "Thailand",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                100.47668,
+                7.00836
+            ]
+        },
+        "current": {
+            "weather": {
+                "ts": "2020-06-26T07:00:00.000Z",
+                "tp": 33,
+                "pr": 1007,
+                "hu": 55,
+                "ws": 2.1,
+                "wd": 0,
+                "ic": "03d"
+            },
+            "pollution": {
+                "ts": "2020-06-26T07:00:00.000Z",
+                "aqius": 55,
+                "mainus": "p2",
+                "aqicn": 20,
+                "maincn": "p2"
+            }
+        }
+    }
+}

@@ -1,13 +1,13 @@
 import React from "react"
-import { Row, Col, Button } from "reactstrap"
-
+import { Row, Col } from "reactstrap"
 
 import imageTitle from "../../assets/img/delivery-man.png"
 import imageCloud from "../../assets/img/cloud.png"
 import imageMarker from "../../assets/img/marker.png"
 import imageWater from "../../assets/img/water.png"
-import imageFrame from "../../assets/img/Frame.png"
 import "./BoxTitle.css"
+
+const imageWeather = "https://www.airvisual.com/images/"
 
 function getAQIDesc(value) {
   if ((value >= 0) && (value <= 25))
@@ -20,10 +20,9 @@ function getAQIDesc(value) {
     return "affect health"
   else if ((value >151) && (value <=200))
     return "Affecting health"
-
 }
 
-function BoxTitle({ aqi }) {
+function BoxTitle({ aqius, ug, tp, hu, ws, ic }) {
 
   return (
     <div className="้header-text">
@@ -42,32 +41,32 @@ function BoxTitle({ aqi }) {
           </Col>
           <Col className="col-title-detail" md={9}>
             <div className="value-weather-flex">
-              <div className="text">{aqi}</div>
-              <div className="text1">US AQI</div>
+              <div className="text">{aqius}</div>
+              <div className="text1">AQI US</div>
             </div>
             <div className="value-weather-flex">
-              <div className="text">{getAQIDesc(aqi)}</div>
-              <div className="text2">pm2.5 g/m</div>
+              <div className="text">{getAQIDesc(aqius)}</div>
+              <div className="text2">pm2.5 {ug} g/m</div>
             </div>
           </Col>
         </Row>
         <Row className="row-title-value">
           <Col>
             <div className="value-box-flex">
-              <img className="image image-cloud" src={imageCloud} alt="imge2" />
-              <div className="text">26°</div>
+              <img className="image image-cloud" src={imageWeather + ic + ".png"} alt="imge2" />
+              <div className="text">{tp}°</div>
             </div>
           </Col>
           <Col>
             <div className="value-box-flex">
               <img className="image image-water" src={imageWater} alt="imge3" />
-              <div className="text">88</div>
+              <div className="text">{hu}%</div>
             </div>
           </Col>
           <Col>
             <div className="value-box-flex">
               <img className="image image-marker" src={imageMarker} alt="imge4" />
-              <div className="text">13.4 km/h</div>
+              <div className="text">{ws} km/h</div>
             </div>
           </Col>
         </Row>

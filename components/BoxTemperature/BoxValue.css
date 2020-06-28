@@ -1,6 +1,4 @@
-.box-value{
-    
-} 
+
 
 .day {
     background-color:white;
@@ -21,6 +19,8 @@
 }
 .data .image {
     float: left;
+    width: 78.7px;
+    height: 69.2px;
 }
 .data .value{
     text-align: center;

@@ -1,35 +1,21 @@
 import React from "react"
 import "./BoxValue.css"
 
-import cloudImage from "../../assets/img/cloud.png"
+const imageWeather = "https://www.airvisual.com/images/"
 
-function BoxValue() {
+function BoxValue({day ,tMax ,tMin ,ic}) {
     return (
         <div className="box-value">
-            <div className="day">Tuesday</div>
+            <div className="day">{day}</div>
             <div className="data">
-                <img className="image" src={cloudImage} />
+                <img className="image" src={imageWeather + ic + ".png"} />
                 <div>
-                    <div className="value">12"</div>
-                    <div className="value">23"</div>
+                    <div className="value">{tMin}°</div>
+                    <div className="value">{tMax}°</div>
                 </div>
-                {/* <hr className ="Horizontal" ></hr> */}
+             
             </div>
         </div>
-
-        // <div className = "flex-container">
-        //     <Alert color="light">
-        //     <div className = "day-flex">Tuesday</div>
-        //     </Alert>
-        //     <div className = "data-flex">
-        //     <img src={cloudImage} />
-        //     </div> 
-        //     <div>
-        //     <span className = "flex-item3">25°</span>
-        //     <span className = "flex-item4">23°</span>
-        //     </div>
-
-        // </div>
 
     )
 
