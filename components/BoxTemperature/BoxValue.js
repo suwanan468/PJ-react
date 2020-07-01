@@ -10,8 +10,8 @@ function BoxValue({day ,tMax ,tMin ,ic}) {
             <div className="data">
                 <img className="image" src={imageWeather + ic + ".png"} />
                 <div>
-                    <div className="value">{tMin}°</div>
                     <div className="value">{tMax}°</div>
+                    <div className="value">{tMin}°</div>
                 </div>
              
             </div>

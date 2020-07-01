@@ -32,7 +32,7 @@ function BoxTitle({ aqius, ug, tp, hu, ws, ic }) {
         <div className="air-index">
           AIR QUALITY INDEX
         </div>
-        <div className="text-time">08.00 , jube 29</div>
+        <div className="text-time">13.00 ,July 1</div>
       </div>
       <div className="box-title">
         <Row className="row-title-detail">

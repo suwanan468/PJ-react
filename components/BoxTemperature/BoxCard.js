@@ -17,31 +17,42 @@ function BoxCard() {
     const [todayTem, setTodayTem] = useState()
     const [tomorrowTem, setTomorrowTem] = useState()
     const [next2DaysTem, setNext2DaysTem] = useState()
-
+    const [airvisual,setData]= useState()
     useEffect(() => {
-        /*const params = {
+        const params = {
           lat: "7.0069759",
           lon: "100.5009291",
           key: "7ddf46c0-f4aa-4754-afef-c663b70f5f49",
           fbclid: "IwAR36LDxlFGhC_JjTzDKxBttGmatKZZm_mQd56a7V4Q503590DmFmvvInXho"
         }
-        const uri = "http://api.airvisual.com/v2/nearest_city" + querystring.stringify(params)
-        fetch("../../data.json", {
-          headers: {
+        const uri = "http://api.airvisual.com/v2/nearest_city?" + querystring.stringify(params)
+        fetch(uri ,{
             "Access-Control-Allow-Origin": "http://localhost:3000",
             'Access-Control-Allow-Credentials': 'true',
-            "mode": "cors"
+            mode: "cors"
           }
-        }).then(resp => {
-          return resp.json()
-        }).then(data => {
-            setData(data)
-        })*/
+        ).then(resp => {
+           // console.log(resp.json())
+          // airvisul_data=resp.json()
+          // console.log(airvisul_data)
+            return resp.json()
+          //return resp.
+        }).then(airvisual => {
+          setData(airvisual.data) 
+          //  console.log(airvisual.data)
+             //airvisul_data=data
+            // airvisul_data=airvisual.data
 
+        })
+
+
+        
         if (!ready) {
             const data = dataJson.data
+            //const data =airvisul_data
+           // console.log(airvisual)
             setAQIUS(data.current.pollution.aqius)
-            setUG(343)
+            setUG(35.6)
             setTP(data.current.weather.tp)
             setHU(data.current.weather.hu)
             setWS(data.current.weather.ws)
